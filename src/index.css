@@ -150,19 +150,7 @@ body {
   height: 263px;
 }
 
-.heti-felfedezes {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  height: 263px;
-  width: 263px;
-  margin-right: 32px;
-}
-
-.idokapszula {
+.custom-card {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -174,30 +162,7 @@ body {
   margin-right: 32px;
 }
 
-.kedvencek {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  width: 263px;
-  height: 263px;
-}
-
-.heti-felfedezes img {
-  margin-top: 56px;
-  margin-left: 99px;
-  margin-right: 99px;
-}
-
-.idokapszula img {
-  margin-top: 56px;
-  margin-left: 99px;
-  margin-right: 99px;
-}
-
-.kedvencek img {
+.custom-card img {
   margin-top: 56px;
   margin-left: 99px;
   margin-right: 99px;

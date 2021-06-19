@@ -1,6 +1,6 @@
 function Card({img, desc}) {
   return (
-    <div className="heti-felfedezes">
+    <div className="custom-card">
       <img src={img} alt="" />
       <span className="card-text">
         {desc}
