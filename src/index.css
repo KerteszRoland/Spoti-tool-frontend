@@ -162,6 +162,11 @@ body {
   margin-right: 32px;
 }
 
+.custom-card:hover {
+  background: rgba(30, 215, 96, 0.3);
+  transition: ease-out 300ms;
+}
+
 .custom-card img {
   margin-top: 56px;
   margin-left: 99px;
