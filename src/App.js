@@ -1,15 +1,14 @@
-import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 import Body from "./components/Body"
 import Footer from "./components/Footer";
 import Logo from './images/Logo.svg'
-import Login from './images/login.svg'
 
 function App() {
   return (
     <div>
-      <Navbar logo={Logo} login={Login}/>
+      <Header logo={Logo}/>
       <Body />
-      <Footer logo={Logo} url="www.orangethereal.hu"/>
+      <Footer logo={Logo} />
     </div>
   );
 }

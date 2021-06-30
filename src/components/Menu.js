@@ -1,11 +1,16 @@
+import login from "../images/login.svg"
+
 function Menu() {
   return (
-    <div className="menu">
-        <button className="btn-menu active">heti felfedezés</button>
-        <button className="btn-menu">kedvencek</button>
-        <button className="btn-menu">időkapszula</button>
-        <button className="btn-menu">kapcsolat</button>
-      </div>
+    <div className="navbar">
+      <button className="btn-navbar">heti felfedezés</button>
+      <button className="btn-navbar">kedvencek</button>
+      <button className="btn-navbar">időkapszula</button>
+      <button className="btn-navbar">kapcsolat</button>
+      <button className="btn-login">
+        <img src={login} alt="login" />
+      </button>
+    </div>
   );
 }
 

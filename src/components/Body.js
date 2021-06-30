@@ -8,7 +8,7 @@ import Pause from "../images/pause.svg"
 
 function Body(){
     return (
-        <section>
+        <div className="content-wrapper">
         <div className="middle-content">
           <div className="hero">
             <span className="h0">Kiegészítő eszközök Spotify-ra!</span>
@@ -24,12 +24,7 @@ function Body(){
             <img src={Icons} alt="" />
           </div>
         </div>
-        <div className="lower-content">
-          <Card img={Pause} desc="Heti felfedezés lejátszási lista mentése."/>
-          <Card img={Calendar} desc="Időkapszula készítése, mely besorolja kedvenc zenéidet az elmúlt hónapokra."/>
-          <Card img={Heart} desc="Kedvenc zenék mentése egy lejátszási listába."/>
-        </div>
-      </section>
+      </div>
     );
 }
 
