@@ -60,6 +60,16 @@ body {
   background: none;
 }
 
+.btn-logout {
+  flex: none;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  background: none;
+  margin: 0px 24px;
+}
+
+
 .navbar {
   flex: none;
   display: flex;
@@ -215,4 +225,30 @@ footer span {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+}
+
+
+.profile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.profile-pic {
+  flex:none;
+  border-radius: 80px;
+  margin: 0px 8px;
+}
+
+.profile-name {
+  flex: 1;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1ed760;
+  margin: 0px 8px;
 }

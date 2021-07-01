@@ -1,10 +1,12 @@
 import { useHistory } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect,  useContext} from "react";
+import { LoginContext } from "../Context/LoginContext";
 
 import Body from "../components/Body";
 
 const Dashboard = () => {
   const history = useHistory();
+  const {setLogin, setUsername, setPic} = useContext(LoginContext);
 
   function SendCode() {
     const urlSearchParams = new URLSearchParams(window.location.search);
@@ -20,6 +22,10 @@ const Dashboard = () => {
         },
         credentials: "include",
         body: JSON.stringify(data),
+      }).then(response => response.json())
+      .then(json => {
+        setUsername(json["name"]);
+        setPic(json["pic"]);
       });
     }
   }
@@ -62,9 +68,10 @@ const Dashboard = () => {
 
 
   useEffect(() => {
-    SendCode();
+    SendCode()
     history.push("/dashboard");
-  });
+    setLogin(true);
+  }, []);
 
   return (
     <div>
