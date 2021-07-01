@@ -1,13 +1,25 @@
+import { Route } from "react-router-dom";
+import { Switch } from "react-router-dom";
+
+import Landing from "./pages/Landing";
+import Dashboard from "./pages/Dashboard";
+
+import Logo from "./images/Logo.svg";
 import Header from "./components/Header";
-import Body from "./components/Body"
 import Footer from "./components/Footer";
-import Logo from './images/Logo.svg'
 
 function App() {
   return (
     <div>
-      <Header logo={Logo}/>
-      <Body />
+      <Header logo={Logo} />
+      <Switch>
+        <Route path="/" exact>
+          <Landing />
+        </Route>
+        <Route path="/dashboard">
+          <Dashboard />
+        </Route>
+      </Switch>
       <Footer logo={Logo} />
     </div>
   );

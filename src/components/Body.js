@@ -1,10 +1,10 @@
-import Card from "./Card"
 import Tovabb from "../images/tovabb-btn.svg"
 import Icons from "../images/icons.svg"
 
-import Heart from "../images/heart-card.svg"
-import Calendar from "../images/calendar-card.svg"
-import Pause from "../images/pause.svg"
+//import Card from "./Card"
+//import Heart from "../images/heart-card.svg"
+//import Calendar from "../images/calendar-card.svg"
+//import Pause from "../images/pause.svg"
 
 function Body(){
     return (
