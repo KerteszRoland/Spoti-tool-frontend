@@ -1,11 +1,11 @@
-function Card({img, desc}) {
+function Card({img, desc, onClick, endpoint}) {
   return (
-    <div className="custom-card">
+    <button className="custom-card" onClick={() => {onClick(endpoint)}}>
       <img src={img} alt="" />
       <span className="card-text">
         {desc}
       </span>
-    </div>
+    </button>
   );
 }
 

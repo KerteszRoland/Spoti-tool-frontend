@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.no-dec {
+  text-decoration: none;
+}
+
 .content-wrapper {
   padding-bottom: 228px;
 }
@@ -38,6 +42,7 @@ body {
   display: flex;
   align-items: center;
   margin-left: 40px;
+  text-decoration: none;
 }
 
 .logo-text {
@@ -68,7 +73,6 @@ body {
   background: none;
   margin: 0px 24px;
 }
-
 
 .navbar {
   flex: none;
@@ -171,15 +175,33 @@ body {
   flex-direction: column;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
+  border: none;
   border-radius: 10px;
   width: 263px;
   height: 263px;
   margin-right: 32px;
+  animation: move-down 0.1s;
+  cursor: pointer;
 }
 
 .custom-card:hover {
   background: rgba(30, 215, 96, 0.3);
-  transition: ease-out 300ms;
+  animation: move-up 0.1s forwards;
+}
+
+@keyframes move-down {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes move-up {
+  100% {
+    transform: translateY(-10%);
+  }
 }
 
 .custom-card img {
@@ -191,7 +213,7 @@ body {
 .card-text {
   flex: 1;
   width: 208px;
-  height: 78px;
+  height: 52px;
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
@@ -199,7 +221,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: white;
-  margin-top: 38px;
+  margin-top: 32px;
 }
 
 footer {
@@ -227,19 +249,18 @@ footer span {
   line-height: 16px;
 }
 
-
-.profile{
+.profile {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-
 .profile-pic {
-  flex:none;
-  border-radius: 80px;
+  flex: none;
+  border-radius: 100px;
   margin: 0px 8px;
+  object-fit: cover;
 }
 
 .profile-name {
